@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+          display: flex;
+          width: 100%;
+          height: 100vh;
+         overflow: hidden;
+        }
+        .circular-image-container {
+          background-color: rgba(239, 42, 57, 1);
+          display: flex;
+          max-width: 480px;
+          width: 100%;
+          flex-direction: column;
+          overflow: hidden;
+          justify-content: center;
+          margin: 0 auto;
+          padding: 297px 63px;
+        }
+        .circular-profile-image {
+          aspect-ratio: 1.04;
+          object-fit: contain;
+          object-position: center;
+          width: 100%;
+          border-radius: 50%;
+        }
+        .visually-hidden {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          border: 0;
+        }
+        .fast{
+          z-index: 99999;    position: absolute;
+          height: 16%;
+          left: -7%;
+          bottom: 2%;
+
+          transform: matrix(1, -1, 1, 1, -5, 8);
+                }
+      </style>
+      
+      <section class="circular-image-container">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/10533b1b5087d477728956d8f65e930571428f98532d0f1dfa04f3fdb2f517e9?placeholderIfAbsent=true&apiKey=a54d87c9a209440aaad8de7652cd7760"
+          class="circular-profile-image"
+          alt="Profile image displayed in a circular frame"
+        />  
+            <img class="fast" src="fast_delevry.png" alt="">
+
+      </section>
+
+</body>
+</html>
